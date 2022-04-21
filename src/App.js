@@ -4,7 +4,6 @@ import "./App.css";
 import Card from './components/Card'
 import axios from 'axios';
 
-
 function App() {
   const [image, setImage] = useState([]);
 
@@ -16,13 +15,13 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <div class="App">
       <header><h1>NASA's Image of the Day</h1></header>
       <div>
         <Card date={image.date} url={image.url} title={image.title} copyright={image.copyright}  explanation={image.explanation}/>
       </div>
-      <hr />
-      <footer><p>Copyright {image.date.substring(0,4)} by {image.copyright}</p></footer>
+      
+      <footer><p>Copyright 2022</p></footer>
       
     </div>
   );
