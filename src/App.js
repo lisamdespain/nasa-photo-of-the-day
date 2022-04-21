@@ -3,6 +3,12 @@ import "./App.css";
 // import { API_KEY } from '../.gitignore';
 import Card from './components/Card'
 import axios from 'axios';
+import styled from "styled-components";
+
+const StyledHeader = styled.div`
+color: ${pr => pr.theme.red};
+text-shadow: ${pr => pr.theme.textShadow};
+`
 
 function App() {
   const [image, setImage] = useState([]);
@@ -16,7 +22,7 @@ function App() {
 
   return (
     <div class="App">
-      <header><h1>NASA's Image of the Day</h1></header>
+      <StyledHeader><h1>NASA's Image of the Day</h1></StyledHeader>
       <div>
         <Card date={image.date} url={image.url} title={image.title} copyright={image.copyright}  explanation={image.explanation}/>
       </div>

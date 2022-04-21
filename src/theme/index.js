@@ -1,7 +1,7 @@
 export default {
     black:"black",
     white:"white",
-    backgroundColor: "lightgray",
-    textShadow:"2px 2px 4px #000000",
-    red: "deepred"
+    backgroundColor: "#C5D6D8",
+    textShadow:"2px 2px 2px lightgray",
+    red: "#7C0B2B"
 }
